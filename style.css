@@ -1,0 +1,170 @@
+.container {
+    display: flex;
+
+}
+
+.startButton{   
+    position:absolute;
+    top: 430px;
+    left: 820px;
+    text-align: center;
+    background-color: darkslategray;
+    border: 0px;
+    border-radius: 20px;
+    font-size: 75px;
+    font-family: "Roboto Mono";
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+}
+
+ul{
+    position: sticky;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: darkslategray;
+}
+
+li{
+    float: left;
+}
+
+
+.active {
+    background-color: brown;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 14px;
+    text-decoration: none;
+    border-right: 2px solid dimgrey;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a:hover{
+    background-color: brown;                            
+}
+
+@keyframes fadeInOut {
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+@keyframes fadeOut {
+    
+}
+
+#descriptiveDiv{
+    opacity: 1;
+    animation: fadeInOut 3s infinite alternate;
+    position:absolute;
+    font-weight: lighter;
+    top: 300px;
+    left: 700px;
+    font-size: 30px;
+    text-align: center;
+    color: white; 
+    -webkit-transition: opacity 0.4s ease-out;
+    -moz-transition: opacity 0.4s ease-out;
+    -ms-transition: opacity 0.4s ease-out;
+    -o-transition: opacity 0.4s ease-out;
+    transition: opacity 0.4s ease-out;
+}
+
+#descriptiveDivTwo{
+    opacity: 1;
+    animation: fadeInOut 3s infinite alternate;
+    position: absolute;
+    font-weight: lighter;
+    top: 350px;
+    left: 700px;
+    font-size: 30px;
+    text-align: center;
+    color: white; 
+    -webkit-transition: opacity 0.4s ease-out;
+    -moz-transition: opacity 0.4s ease-out;
+    -ms-transition: opacity 0.4s ease-out;
+    -o-transition: opacity 0.4s ease-out;
+    transition: opacity 0.4s ease-out;
+}
+
+#descriptiveDiv.fade {
+    opacity: 0;
+}
+
+#descriptiveDivTwo.fade {
+    opacity: 0;
+}
+
+#fadeOutDiv {
+    animation: fadeOut;
+}
+
+.holderParent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+}
+
+#holder {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    width: 900px;
+    height: 200px;
+    border-radius: 50%;    
+}
+
+.correct {
+    opacity: 1;
+}
+
+.incorrect {
+    opacity: 1;
+    color: red;
+    text-decoration: underline;
+}
+
+.word {
+    opacity: 0.25;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    width: 900px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+
+textarea {
+    resize: none;
+    top: 50rem;
+    left: 50rem;
+}
+
+.hiddenDisplay {
+    display: none;
+}
+
+#result {
+    margin: auto 0;
+    text-align: center;
+    font-size: 30px;
+    font: bolder;
+    color: white;
+}
